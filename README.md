@@ -1,2 +1,3 @@
 # cf_ai_streamlinechat
-We create personalized AI customer service and lead generation agents so your business can immediately serve your customers' needs. The agent will answer many questions on its own, and send your business an email when additional support is necessary.
+
+To try a demo of Streamline Chat and view the details about my business, visit https://streamlinechat.com/ . Just click the chat icon at the bottom right to try. 
