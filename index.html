@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+
+<body>
+  <div class="container clearfix">
+    <div class="chat">
+      <div class="chat-header clearfix">
+        <img id="logo" , alt="logo" />
+        <div class="chat-with"><br>Chat with Customer Support</div>
+        <i class="fa fa-star"></i>
+      </div>
+
+      <div class="chat-history">
+        <ol>
+          <li style="font-size: 13px; color: #868686; margin-bottom: 10px;">
+            By using chat, you agree all chats may be retained and used as described in our Privacy Statement at
+            privacy.streamlinechat.com, and agree to the Terms at terms.streamlinechat.com. Disclaimer: This chat
+            provides guidance and responses may not always be fully accurate.
+          </li>
+        </ol>
+      </div>
+
+      <div class="chat-message clearfix">
+        <div class="send-container">
+          <textarea name="message-to-send" id="message-to-send" placeholder="" rows="3"></textarea>
+          <button name="send" id="send"><img width="30" , height="30" , src="send.png" , alt="send" /></button>
+        </div>
+        <div class="button-container">
+          <button name="end-chat" id="end-chat" type="button">END CHAT</button>
+          <button id="about" onclick="window.open('https://streamlinechat.com/about', '_blank')">ABOUT STREAMLINE
+            CHAT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script id="message-template" type="text/x-handlebars-template">
+       <li>
+         <div class="message other-message float-right">
+           {{text}}
+         </div>
+          <div class="message-data align-right">
+            <span class="message-data-time">{{time}}</span> &nbsp; &nbsp;
+          </div>
+       </li>
+     </script>
+
+  <script id="message-response-template" type="text/x-handlebars-template">
+       <li>
+         <div class="message my-message">
+           {{text}}
+         </div>
+          <div class="message-data">
+            <span class="message-data-time">{{time}}</span>
+          </div>
+        </li>
+     </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

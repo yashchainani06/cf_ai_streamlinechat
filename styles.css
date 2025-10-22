@@ -1,0 +1,239 @@
+html {
+     height: 100%;
+}
+
+body {
+     font-family: 'gill sans', sans-serif;
+     height: 100%;
+}
+
+body.myBodyClass {
+     padding: 40px 0;
+     color: white;
+}
+
+.container {
+     box-sizing: border-box;
+     height: 100%;
+}
+
+.container *:before,
+.container *:after {
+     box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+     box-sizing: border-box;
+}
+
+.chat {
+     width: 100%;
+     float: left;
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+     border-radius: 15px;
+     height: 100%;
+     background: #173824;
+     border: 1px solid;
+     border-color: #c6c6c6;
+}
+
+.chat .chat-header {
+     padding: 10px;
+     color: #ebebeb;
+     border-bottom: 2px solid #919191;
+     border-top-left-radius: 15px;
+     border-top-right-radius: 15px;
+     height: 90px;
+     display: flex;
+     align-items: center;
+     position: relative;
+}
+
+.chat .chat-header img {
+     margin-right: 10px;
+     height: 80%;
+}
+
+
+.chat .chat-header .chat-with {
+     font-family: 'gill sans', sans-serif;
+     font-size: 19px;
+     text-align: center;
+     justify-content: center;
+     flex-grow: 1;
+     margin-top: -20px;
+}
+
+.chat .chat-history {
+     padding: 0px 5px 20px;
+     border-bottom: 2px solid white;
+     overflow-y: scroll;
+     height: calc(100% - 200px);
+     background: #f8f8f8;
+}
+
+.chat .chat-history ol li {
+     list-style-type: none;
+}
+
+.chat .chat-history ol {
+     padding: 0px;
+}
+
+.chat .chat-history .message-data {
+     margin-bottom: 15px;
+}
+
+.chat .chat-history .message-data-time {
+     color: #a2a2a2;
+     font-size: 10px;
+     padding-left: 6px;
+}
+
+.chat .chat-history .message {
+     color: white;
+     padding: 10px;
+     line-height: 26px;
+     font-size: 16px;
+     border-radius: 7px;
+     margin-bottom: 5px;
+     width: 90%;
+     position: relative;
+}
+
+.chat .chat-history .my-message {
+     background: #e6e6e6;
+     color: #0f0f0f;
+     border: 1px solid;
+     border-color: #c6c6c6;
+     border-top-left-radius: 0px;
+     margin-right: 10%;
+}
+
+.chat .chat-history .other-message {
+     background: #173824;
+     color: #e6e6e6;
+     margin-left: 10%;
+     border-top-right-radius: 0px;
+}
+
+.chat .chat-message {
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     height: 100px;
+     border-top: 2px solid #919191;
+     border-bottom-left-radius: 15px;
+     border-bottom-right-radius: 15px;
+     position: relative;
+}
+
+.chat .chat-message .send-container {
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+}
+
+.chat .chat-message .send-container textarea {
+     width: 100%;
+     border: none;
+     padding: 10px 20px;
+     margin-right: 3px;
+     font: 14px/22px "Lato", Arial, sans-serif;
+     margin-bottom: 1px;
+     border-radius: 5px;
+     resize: none;
+     height: 60px;
+     background-color: #f8f8f8;
+}
+
+.chat .chat-message .send-container .send button {
+     float: right;
+     cursor: pointer;
+     border: none;
+     outline: none;
+}
+
+.chat .chat-message button {
+     border: none;
+     padding: 5px;
+     font-size: 16px;
+     cursor: pointer;
+     color: #ebebeb;
+     font-weight: bold;
+     height: 50%;
+     background: none;
+}
+
+#end-chat {
+     border: none;
+     padding: 5px;
+     font-size: 16px;
+     cursor: pointer;
+     color: #ebebeb;
+     font-weight: bold;
+     background: none;
+     position: absolute;
+     left: 5px;
+     top: 60px;
+     display: inline-block;
+     text-align: center;
+     text-decoration: none;
+     font-family: arial;
+     font-size: inherit;
+}
+
+#about {
+     border: none;
+     padding: 5px;
+     font-size: 16px;
+     cursor: pointer;
+     color: #ebebeb;
+     font-weight: bold;
+     background: none;
+     position: absolute;
+     right: 5px;
+     top: 60px;
+     display: inline-block;
+     text-align: center;
+     text-decoration: none;
+     font-family: arial;
+     font-size: inherit;
+}
+
+#end-chat:hover {
+     color: #5d5d5d;
+}
+
+#about:hover {
+     color: #5d5d5d;
+}
+
+.chat .chat-message button:hover {
+     color: #5d5d5d;
+}
+
+.align-left {
+     text-align: left;
+}
+
+.align-right {
+     text-align: right;
+}
+
+.float-right {
+     float: right;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
